@@ -8,23 +8,14 @@
 		<meta name="Description" content="Máy đánh bạc Điện Tử🎰，Bắn Cá，Game Bài，Sòng bạc trực tuyến, nền tảng chơi Game và giải trí đáng tin cậy nhất."/>
 		<link rel="icon" href="images/index/favicon.ico">
 		<title>Hubet Trò chơi sòng bạc trực tuyến hay nhất, thương hiệu lâu đời mà bạn có thể tin tưởng.</title>
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-		<!-- Ionicons -->
-		<script type="module" src="js/ionicons.esm.js"></script>
-		<script nomodule src="js/ionicons.js"></script>
-		<!-- Custom CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"  crossorigin="anonymous">
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 		<link rel="stylesheet" href="css/style.css">
-		<!-- Vue.js -->
-		<script src="js/vue.global.min.js"></script>
-		<!-- jQuery -->
-		<script src="js/jquery.min.js"></script>
-		<!-- Bootstrap Bundle JS (includes Popper.js) -->
-		<script src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>   	
-		<!-- Custom JS -->
+		<script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.min.js"></script>
 		<script src="js/vue.js"></script>
 		<script src="js/jquery.js"></script>
-
+		<script src="js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
 
 	</head>
 	<body>
@@ -92,7 +83,7 @@
 							<div class="link-download-app">
 								<div class="content">
 									<a @click="down" target="_blank">
-									<!--<h3>TRUY CẬP LINK TẢI APP TỐC ĐỘ CAO</h3>-->
+	<!--									<h3>TRUY CẬP LINK TẢI APP TỐC ĐỘ CAO</h3>-->
 										<img src="images/index/down_btn.png" style="width: 100%">
 									</a>
 								</div>
@@ -122,18 +113,18 @@
 						<div class="refresh pcbdmap">
 							<a @click="refresh">TẢI LẠI</a>
 						</div>
-					</div>
-				</div>
-				<div class="apps">
-					<div class="app-bg">
-						<a @click="down" href="javascript:void(0)"><img src="images/切图/底部过度版.png" alt="Background"></a>
-						<div class="app-img">
-							<a href="https://1.1.1.1" target="_blank"><img src="images/切图/btn.png" alt="Button"></a>
-							<a @click="down"  href="javascript:void(0)"><img src="images/切图/图层 3.png" alt="Layer 3"></a>
-						</div>
-						<div class="app-button">
-							<a href="https://hubet8833.com/DownloadApp/" target="_blank"><img src="images/切图/Android.png" alt="Android"></a>
-							<a href="https://hubet8833.com/DownloadApp/" target="_blank"><img src="images/切图/iOS.png" alt="iOS"></a>
+						<div class="apps">
+							<div class="app-bg">
+								<a @click="down" href="javascript:void(0)"><img src="images/切图/底部过度版.png" alt="Background"></a>
+								<div class="app-img">
+									<a href="https://1.1.1.1" target="_blank"><img src="images/切图/btn.png" alt="Button"></a>
+									<a @click="down" href="javascript:void(0)"><img src="images/切图/e图层 3.png" alt="Layer 3"></a>
+								</div>
+								<div class="app-button">
+									<a href="https://hubet8833.com/DownloadApp/"><img src="images/切图/Android.png" alt="Android"></a>
+									<a href="https://hubet8833.com/DownloadApp/"><img src="images/切图/iOS.png" alt="iOS"></a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -323,7 +314,7 @@
 						targetUrl = this.apkAppUrl;
 					}
 
-					window.open(targetUrl, '_blank');
+					//window.open(targetUrl, '_blank');
 				},
 
 				browserDetection() {

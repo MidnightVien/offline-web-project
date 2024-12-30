@@ -298,9 +298,12 @@ ul li {
 }
 
 .apps {
-	width: 440px;
-    transform: translate(-8%, 5%);
-	z-index: 1;
+	display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 10px 0;
+    width: 109%;
+    transform: translate(-5%, 7%);
 }
 
 .app-bg {
@@ -325,18 +328,18 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
 }
 
 .app-img img {
-	width: 175px;
-    height: 25px;
+	width: 160px;
+    height: 30px;
 }
 
 .app-button {
 	position: absolute;
     top: 75%;
-    left: 68%;
+    left: 70%;
     transform: translate(-50%, -50%);
     display: flex;
     gap: 5px;
@@ -708,15 +711,17 @@ ul li {
 @media screen and (max-width: 390px) {
 
 	.apps {
-		width: 385px;
-		transform: translate(-8%, 5%);
-		z-index: 1;
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		margin: 10px 0;
+		width: 109%;
+		transform: translate(-5%, 7%);
 	}
-
 	.app-img {
 		position: absolute;
 		top: 35%;
-		left: 65%;
+		left: 70%;
 		transform: translate(-50%, -50%);
 		display: flex;
 		flex-direction: column;
@@ -725,14 +730,14 @@ ul li {
 	}
 	
 	.app-img img {
-		width: 150px;
+		width: 140px;
 		height: 25px;
 	}
 
 	.app-button {
 		position: absolute;
 		top: 77%;
-		left: 65%;
+		left: 70%;
 		transform: translate(-50%, -50%);
 		display: flex;
 		gap: 5px;
