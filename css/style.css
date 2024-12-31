@@ -289,7 +289,6 @@ ul li {
 	display: flex;
     justify-content: space-between;
 	align-items: center;
-    margin-top: 10px;
 }
 .socials img {
 	width: 150px;
@@ -303,7 +302,7 @@ ul li {
     justify-content: flex-end;
     margin: 10px 0;
     width: 109%;
-    transform: translate(-5%, 7%);
+    transform: translate(-5%, -10%);
 }
 
 .app-bg {
@@ -713,7 +712,7 @@ ul li {
 		justify-content: flex-end;
 		margin: 10px 0;
 		width: 109%;
-		transform: translate(-5%, 7%);
+        transform: translate(-5%, -15%);
 	}
 	.app-img {
 		position: absolute;
