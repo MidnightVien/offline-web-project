@@ -322,7 +322,7 @@ ul li {
 
 .app-img {
 	position: absolute;
-    top: 35%;
+    top: 50%;
     left: 70%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -332,15 +332,15 @@ ul li {
 }
 
 .app-img img {
-	width: 160px;
-    height: 30px;
+	width: 210px;
+    height: 33px;
 }
 
 .app-button {
-	position: absolute;
+	/*position: absolute;
     top: 75%;
     left: 70%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);*/
     display: flex;
     gap: 5px;
 }
@@ -720,7 +720,7 @@ ul li {
 	}
 	.app-img {
 		position: absolute;
-		top: 35%;
+		top: 50%;
 		left: 70%;
 		transform: translate(-50%, -50%);
 		display: flex;
@@ -730,15 +730,11 @@ ul li {
 	}
 	
 	.app-img img {
-		width: 140px;
-		height: 25px;
+		width: 180px;
+        height: 27px;
 	}
 
 	.app-button {
-		position: absolute;
-		top: 77%;
-		left: 70%;
-		transform: translate(-50%, -50%);
 		display: flex;
 		gap: 5px;
 	}
