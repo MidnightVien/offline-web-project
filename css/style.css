@@ -712,7 +712,7 @@ ul li {
 		justify-content: flex-end;
 		margin: 10px 0;
 		width: 109%;
-        transform: translate(-5%, -15%);
+        transform: translate(-5%, -10%);
 	}
 	.app-img {
 		position: absolute;
