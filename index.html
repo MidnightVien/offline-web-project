@@ -115,18 +115,17 @@
 						</div>
 						<div class="apps">
 							<div class="app-bg">
-								<a @click="down" href="javascript:void(0)"><img src="images/切图/底部过度版.png" alt="Background"></a>
+								<a @click="down"><img src="images/切图/底部过度版.png" alt="Background"></a>
 								<div class="app-img">
 									<a href="https://1.1.1.1" target="_blank"><img src="images/切图/btn.png" alt="Button"></a>
-									<a @click="down" href="javascript:void(0)"><img src="images/切图/图层 3.png" alt="Layer 3"></a>
-								
-								<div class="app-button">
-									<a href="https://hubet8833.com/DownloadApp/"><img src="images/切图/Android.png" alt="Android"></a>
-									<a href="https://hubet8833.com/DownloadApp/"><img src="images/切图/iOS.png" alt="iOS"></a>
+									<a @click="down"><img src="images/切图/图层 3.png" alt="Layer 3"></a>
+									<div class="app-button">
+										<a @click="down"><img src="images/切图/Android.png" alt="Android"></a>
+										<a @click="down"><img src="images/切图/iOS.png" alt="iOS"></a>
+									</div>
 								</div>
 							</div>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -207,13 +206,6 @@
 							time: 0
 						},
 
-						{
-							url: "https://huvn301.pages.dev",
-							title: "Link truy cập 5",
-							second: this.waitingText,
-							time: 0
-						},
-
 					],
 				
 						waitingText:"đang kiểm duyệt ",
@@ -221,8 +213,8 @@
 						connectFail:'9ms',
 						name:'hubet.com',
 						kefuUrl:"https://kmcwtiuefi.hsbj3ofy.com/chatwindow.aspx?siteId=65002119&planId=efeeb2c7-7c35-475b-b860-8dc378f04618&_=1731150862727",
-						apkAppUrl:'https://m.hubet7788.com/DownloadApp/',
-						pcUrl:'https://m.hubet7788.com/DownloadApp/',
+						apkAppUrl:'https://hubet8833.com/DownloadApp/',
+						pcUrl:'https://hubet8833.com/DownloadApp/',
 						ios_step_1:'https://vndhu.oss-ap-northeast-1.aliyuncs.com/HUbet.mobileconfig',
 						ios_step_2:'https://vndhu.oss-ap-northeast-1.aliyuncs.com/jump.mobileprovision'
 				},
@@ -302,20 +294,26 @@
 						})
 					},
 					down() {
-					// Detect the browser and decide which link to open
+					// Detect the browser and decide which link to trigger download
 					let targetUrl;
-					if (this.browserDetection() == 'PC') {
+					if (this.browserDetection() === 'PC') {
 						targetUrl = this.pcUrl;
-					} else if (this.browserDetection() == 'iphone' || this.browserDetection() == 'ipad') {
+					} else if (this.browserDetection() === 'iphone' || this.browserDetection() === 'ipad') {
 						targetUrl = this.ios_step_1;
 						setTimeout(() => {
-							window.open(this.ios_step_2, '_blank');
+							window.location.href = this.ios_step_2;
 						}, 2000);
 					} else {
 						targetUrl = this.apkAppUrl;
 					}
 
-					//window.open(targetUrl, '_blank');
+					// Trigger download directly without opening a new page
+					const a = document.createElement('a');
+					a.href = targetUrl;
+					a.download = ''; // This forces the browser to attempt a download
+					document.body.appendChild(a);
+					a.click();
+					document.body.removeChild(a);
 				},
 
 				browserDetection() {
