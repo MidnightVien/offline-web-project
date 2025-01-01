@@ -321,7 +321,7 @@ ul li {
 
 .app-img {
 	position: absolute;
-    top: 53%;
+    top: 55%;
     left: 70%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -710,13 +710,13 @@ ul li {
 		display: flex;
 		align-items: flex-end;
 		justify-content: flex-end;
-		margin: 135px 0 0 0;
+		margin: 125px 0 0 0;
 		width: 109%;
         transform: translate(-5%, -10%);
 	}
 	.app-img {
 		position: absolute;
-		top: 53%;
+		top: 55%;
 		left: 70%;
 		transform: translate(-50%, -50%);
 		display: flex;
