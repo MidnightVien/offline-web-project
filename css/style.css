@@ -306,7 +306,7 @@ ul li {
 }
 
 .app-bg {
-	position: relative;
+	position: absolute;
 	display: inline-block;
 	overflow: hidden;
 	width: 100%;
@@ -710,7 +710,7 @@ ul li {
 		display: flex;
 		align-items: flex-end;
 		justify-content: flex-end;
-		margin: 10px 0 0 0;
+		margin: 125px 0 0 0;
 		width: 109%;
         transform: translate(-5%, -10%);
 	}
